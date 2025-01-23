@@ -89,7 +89,7 @@ header {
 
 @media (max-width: 768px) {
     header {
-        height: auto; /* Adjust height for smaller screens */
+        height: 350px; /* Adjust height for smaller screens */
         padding: 10px; /* Reduce padding for smaller screens */
     }
 
@@ -99,15 +99,18 @@ header {
     }
 
     .title {
-        font-size: 1.4rem; /* Adjust title font size for mobile */
+        font-size: 0.5rem; /* Adjust title font size for mobile */
     }
 
     .menu ul {
         align-items: center; /* Center the items */
+        flex-direction: row;
+        justify-content: center;
+        padding:0;
     }
 
     .menu ul li {
-        margin: 10px 0; /* Add space between menu items */
+        margin: 0 10 px; /* Add space between menu items */
     }
 
     .menu ul li a {
@@ -179,13 +182,13 @@ header {
     }
 
     .content h1 {
-        font-size: 1.8rem; /* Adjust font size for smaller screens */
+        font-size: 0.5 rem; /* Adjust font size for smaller screens */
         text-align: center; /* Center text on small screens */
         margin-bottom: 15px;
     }
 
     .content p {
-        font-size: 1rem; /* Adjust font size for mobile */
+        font-size: 0.5rem; /* Adjust font size for mobile */
         text-align: center; /* Center text on small screens */
     }
 
@@ -207,7 +210,7 @@ header {
     }
 
     .Discover-text h2 {
-        font-size: 2rem; /* Adjust heading size on mobile */
+        font-size: 0.5rem; /* Adjust heading size on mobile */
     }
 }
 
