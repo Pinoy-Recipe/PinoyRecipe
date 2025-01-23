@@ -110,7 +110,7 @@ header {
     }
 
     .menu ul li {
-        margin: 0 10 px; /* Add space between menu items */
+        margin: 0 5px; /* Add space between menu items */
     }
 
     .menu ul li a {
