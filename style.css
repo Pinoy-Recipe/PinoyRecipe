@@ -39,8 +39,8 @@ header {
 }
 
 .logo {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     filter: invert(1); /* Inverts black to white */
 }
 
@@ -83,6 +83,35 @@ header {
     color: #ff7200;
 }
 
+@media (max-width: 768px) {
+    header {
+        height: auto; /* Adjust height for smaller screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .logo {
+        width: 120px; /* Make logo smaller on mobile */
+        height: 120px;
+    }
+
+    .title {
+        font-size: 1.8rem; /* Adjust title font size for mobile */
+    }
+
+    .menu ul {
+        flex-direction: column; /* Stack the menu items vertically on mobile */
+        align-items: center; /* Center the items */
+    }
+
+    .menu ul li {
+        margin: 10px 0; /* Add space between menu items */
+    }
+
+    .menu ul li a {
+        font-size: 1.2rem; /* Adjust font size for mobile */
+    }
+
+}
 .content{
     display: flex;
     align-items: center;
@@ -92,7 +121,7 @@ header {
     
 }
 .content h1{
-    font-size: 2.9rem;
+    font-size: 2.5rem;
     font-family: cursive;
     margin-bottom: 20px;
     font-weight: bold;
@@ -114,8 +143,7 @@ header {
 
 .content .image{
     margin-left: 5px; /* Space between text and image */
-    flex: 2;
-    max-width: 50%;
+    flex: 1 1 40%;
 }
 
 .content img {
@@ -147,8 +175,9 @@ header {
 
 .carousel {
     position: relative;
-    width: 50%;
-    margin:  auto ;
+    width: 100%;
+    max-width: 600px;
+    margin:  20px ;
     overflow: hidden;
   }
   
@@ -314,9 +343,9 @@ input[type="radio"] {
 
 /* Image style */
 .recipe-box img {
-    width: 100%; /* Image fills the width of the box */
-    height: auto; /* Maintains the aspect ratio */
-    border-radius: 6px; /* Rounded corners for the image */
+    width: 100%; 
+    height: auto; 
+    border-radius: 6px; 
 }
 
 /* Description style */
@@ -617,6 +646,39 @@ footer {
     text-align: center;
     margin-top: 10px;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    footer {
+        height: auto; /* Allow the footer to grow with content */
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Stack the sections vertically on small screens */
+        align-items: center; /* Center the content */
+        padding: 10px;
+    }
+
+    .footer-section {
+        flex: 1 1 100%; /* Full width for each section on mobile */
+        margin-bottom: 10px; /* Reduce space between sections */
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .social-icons {
+        flex: 1 1 100%; /* Full width for social icons section */
+        margin-bottom: 20px; /* Add some space below the icons */
+    }
+
+    .icons a {
+        font-size: 1.5rem; /* Slightly smaller icons for mobile */
+    }
+
+    .rights {
+        text-align: left; /* Align the rights text to the left */
+        margin-top: 10px;
+    }
 }
 
 /*Form*/
