@@ -10,9 +10,13 @@ body,html {
     height: 100%; /* Ensures the full height is available */
     display: flex;
     flex-direction: column; /* Stack elements vertically */
+    overflow-x: hidden;
 }
 
 .main-content {
+    width:100%;
+    padding:20px;
+    box-sizing: border-box;
     flex: 1; /* Takes up all available space, pushing the footer down */
     display: flex;
     flex-direction: column; /* Optional: Stack elements inside if needed */
@@ -95,11 +99,10 @@ header {
     }
 
     .title {
-        font-size: 1.8rem; /* Adjust title font size for mobile */
+        font-size: 1.4rem; /* Adjust title font size for mobile */
     }
 
     .menu ul {
-        flex-direction: column; /* Stack the menu items vertically on mobile */
         align-items: center; /* Center the items */
     }
 
@@ -108,7 +111,7 @@ header {
     }
 
     .menu ul li a {
-        font-size: 1.2rem; /* Adjust font size for mobile */
+        font-size: 1.1rem; /* Adjust font size for mobile */
     }
 
 }
@@ -118,6 +121,7 @@ header {
     justify-content: flex-start;
     color: rgb(0, 0, 0);
     padding-left: 30px;
+    flex-wrap: wrap;
     
 }
 .content h1{
@@ -167,6 +171,46 @@ header {
 
 }
 
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack text and image vertically */
+        padding-left: 0; /* Remove left padding on mobile */
+        align-items: center; /* Center align text and image */
+    }
+
+    .content h1 {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+        text-align: center; /* Center text on small screens */
+        margin-bottom: 15px;
+    }
+
+    .content p {
+        font-size: 1rem; /* Adjust font size for mobile */
+        text-align: center; /* Center text on small screens */
+    }
+
+    .content .text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .content .image {
+        flex: 1 1 100%; /* Ensure image takes full width on small screens */
+        margin-left: 0; /* Remove left margin */
+        padding-top: 20px; /* Adjust padding */
+    }
+
+    .content img {
+        max-height: 300px; /* Limit image height on smaller screens */
+        width: 100%;
+        object-fit: cover; /* Maintain image aspect ratio */
+    }
+
+    .Discover-text h2 {
+        font-size: 2rem; /* Adjust heading size on mobile */
+    }
+}
+
 .carousel-description{
     font-size: 1.3em; /* Increase the size to make it slightly bigger */
     color: #333;
@@ -177,10 +221,9 @@ header {
     position: relative;
     width: 100%;
     max-width: 600px;
-    margin:  20px ;
+    margin:  20px auto ;
     overflow: hidden;
     text-align: center;
-
   }
   
   .carousel-container {
