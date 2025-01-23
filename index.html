@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinoy Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+                <img src="images/logo.png" class="logo">
+                <h1 class="title">Pinoy Recipe</h1>
+            
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="form.html">Form</a></li>
+
+                
+            </ul>
+        </div>
+    </header>
+<div class="main-content">
+    <section id="home">
+    <div class="content">
+        <div class="text">
+            <h1>Welcome to Pinoy Recipe!</h1>
+            <p>Discover the authentic taste of Filipino cuisine and explore a variety of delicious recipes!</p>
+        </div>
+        <div class="image">
+            <img src="images/food4.jpg" alt="Food Image">
+        </div>
+    </div>
+
+    <div class="Discover-text">
+        <h2>Discover our Best Pinoy Dishes</h2>
+    </div>
+
+    <div class="carousel">
+        <input type="radio" name="carousel" id="slide1" checked />
+        <input type="radio" name="carousel" id="slide2" />
+        <input type="radio" name="carousel" id="slide3" />
+        <input type="radio" name="carousel" id="slide4" />
+        <input type="radio" name="carousel" id="slide5" />
+        <input type="radio" name="carousel" id="slide6" />
+        <input type="radio" name="carousel" id="slide7" />
+
+       <div class="carousel-container">
+            <div class="carousel-item">
+                <a href="https://www.allrecipes.com/recipe/128699/famous-chicken-adobo/" target="_blank"  title="View this recipe on All Recipe">
+                    <img src="images/adobo.jpg" class="carousel-image" />
+                    <p class="carousel-description"><strong>Adobo</strong> is a savory, tangy, and rich Filipino dish made with chicken or pork, marinated in soy sauce, vinegar, garlic, and spices</p>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://www.knorr.com/ph/r/sinigang-na-baboy.html/214408" target="_blank"  title="View this recipe on knorr">
+                    <img src="images/sinigang.jpg" class="carousel-image" />
+                    <p class="carousel-description"><strong>Sinigang</strong> is a sour Filipino soup typically made with pork, tamarind, and a variety of vegetables, perfect for hot days.</p>
+               </a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://panlasangpinoy.com/filipino-lumpia-recipe/" target="_blank"  title="View this recipe on Panlasang Pinoy">
+                    <img src="images/lumpia.jpg" class="carousel-image" />
+                    <p class="carousel-description"><strong>Lumpia</strong> are Filipino spring rolls filled with a variety of ingredients like ground meat, vegetables, and shrimp, often served as appetizers</p>
+              </a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://panlasangpinoy.com/kare-kare-recipe/" target="_blank"  title="View this recipe on Panlasang Pinoy">
+                    <img src="images/kare-kare.jpg" class="carousel-image" />
+                    <p class="carousel-description"><strong>kare-kare</strong> is a rich Filipino stew made with oxtail, tripes, and vegetables, served with a savory peanut sauce.</p>
+        
+                </a>
+            </div> 
+            <div class="carousel-item"><a href="https://panlasangpinoy.com/filipino-pork-menudo-recipe/" target="_blank"  title="View this recipe on Panlasang Pinoy">
+                <img src="images/menudo.jpg" class="carousel-image" />
+                <p class="carousel-description"><strong>Menudo</strong> is a Filipino dish made with pork, liver, potatoes, carrots, and bell peppers in a savory tomato sauce.</p>
+              </a>  
+            </div>
+            <div class="carousel-item">
+                <a href="https://panlasangpinoy.com/sisig-recipe-knr-kls/" target="_blank"  title="View this recipe on Panlasang Pinoy">
+                    <img src="images/sisig.jpg" class="carousel-image" />
+                    <p class="carousel-description"><strong>Sisig</strong> is a Filipino dish made with sizzling pig’s head, liver, and chili peppers, known for its crispy and savory flavor.</p>
+                </a>  
+            </div>
+            <div class="carousel-item"><a href="https://panlasangpinoy.com/beef-kaldereta/" target="_blank"  title="View this recipe on Panlasang Pinoy">
+                <img src="images/kaldereta.jpg" class="carousel-image" />
+                <p class="carousel-description"><strong>kaldereta</strong> is a Filipino beef stew made with tender beef, vegetables, and a tomato-based sauce, usually served on special occasions.</p>
+              </a>    
+            </div>
+                       
+        </div>
+    
+ <!-- Navigation Controls -->
+  <!-- For Slide 1 -->
+  <div class="navigation">
+    <label for="slide7" class="next">&#10095;</label> <!-- Next: move to Slide 2 -->
+    <label for="slide2" class="prev">&#10094;</label> <!-- Prev: loop back to Slide 7 -->
+  </div>
+
+  
+ </div>
+
+ <!-- Recipe Categories Section -->
+<div class="recipe-categories">
+    <h1>Recipe Categories</h1>
+    <button><a href="#breakfast">Breakfast</a></button>
+    <button><a href="#lunch">Lunch</a></button>
+    <button><a href="#dinner">Dinner</a></button>
+   
+</div>
+
+<!-- Sections for each category -->
+<div id="breakfast" class="recipe-section">
+    <h2>Breakfast</h2>
+    <div class="recipe-box">
+        <img src="images/tapsilog.jpg" alt="Breakfast">
+       <p>Tapsilog is a classic Filipino breakfast consisting of marinated beef (tapa), garlic fried rice (sinangag), and a fried egg (itlog). It’s a flavorful and filling dish, often paired with pickled vegetables or fresh tomatoes.</p>
+       <a href="https://panlasangpinoy.com/tapsilog-recipe/" target="_blank"  title="View this recipe on Panlasang Pinoy">View Recipe</a>
+    </div>
+    
+<div class="recipe-box">
+    <img src="images/longsilog.jpg" alt="Breakfast">
+    <p>Longsilog is a delicious breakfast combo of sweet or garlicky sausage (longganisa), garlic fried rice (sinangag), and a fried egg (itlog). It’s a satisfying dish, perfect for a hearty start to the day.</p>
+    <a href="https://panlasangpinoy.com/how-to-cook-longsilog/" target="_blank"  title="View this recipe on Panlasang Pinoy">View Recipe</a>
+</div>
+    
+<div class="recipe-box">
+    <img src="images/champorado.jpg" alt="Breakfast">
+    <p>Champorado is a sweet chocolate rice porridge made with glutinous rice and cocoa powder. Often served with dried fish (tuyo), it offers a comforting mix of sweet and salty flavors.</p>
+    <a href="https://panlasangpinoy.com/easy-champorado-recipe/" target="_blank"  title="View this recipe on Panlasang Pinoy">View Recipe</a>
+</div>
+    
+<div class="recipe-box">
+    <img src="images/pancit.jpg" alt="Breakfast">
+    <p>Pancit Malabon is a flavorful noodle dish with thick rice noodles, shrimp, mussels, and a savory seafood sauce. It’s often served during celebrations and topped with hard-boiled eggs for extra flavor.</p>
+    <a href="https://panlasangpinoy.com/pancit-malabon/" target="_blank"  title="View this recipe on Panlasang Pinoy">View Recipe</a>
+</div>
+<div class="other-recipe">
+    <a href="https://www.kawalingpinoy.com/category/breakfast-and-brunch/" target="_blank"  title="View other recipe on Panlasang Pinoy">View other Recipe</a>
+    
+</div>    
+
+</div>
+
+<div id="lunch" class="recipe-section">
+    <h2>Lunch</h2>
+
+<div class="recipe-box">
+    <img src="images/tinola.jpg" alt="Lunch">
+    <p>Tinolang Manok is a comforting chicken soup with ginger, green papaya, and malunggay leaves. Its warm and flavorful broth makes it a Filipino favorite, especially during rainy days.</p>
+    <a href="https://panlasangpinoy.com/classic-tinolang-manok-recipe/" target="_blank"  title="View this recipe on Panlasang Pinoy">View Recipe</a>
+</div>
+
+<div class="recipe-box">
+    <img src="images/nilaga.jpg" alt="Lunch">
+    <p>Nilagang Baboy is a tender pork stew with cabbage, potatoes, and corn, simmered in a flavorful broth. It's a simple yet satisfying dish perfect for family meals.</p>
+    <a href="https://panlasangpinoy.com/nilagang-baboy/" target="_blank"  title="View this recipe on Panlasang Pinoy">View Recipe</a>
+</div>
+
+<div class="recipe-box">
+    <img src="images/pinakbet.jpg" alt="Lunch">
+    <p>Pinakbet is a classic Filipino vegetable dish with squash, eggplant, and bitter melon cooked in shrimp paste. This hearty and savory dish showcases the unique flavors of local produce.</p>
+    <a href="https://panlasangpinoy.com/pinakbet-tagalog-recipe-knr-sc/" target="_blank"  title="View this recipe on Panlasang Pinoy">View Recipe</a>
+</div>
+
+<div class="recipe-box">
+    <img src="images/dinuguan.jpg" alt="Lunch">
+    <p>Dinuguan is a rich pork blood stew flavored with garlic, vinegar, and a hint of chili. This savory dish is a unique and beloved part of Filipino cuisine.</p>
+    <a href="https://panlasangpinoy.com/pork-dinuguan-recipe/" target="_blank"  title="View this recipe on Panlasang Pinoy">View Recipe</a>
+</div>
+
+<div class="other-recipe">
+    <a href="https://www.recipedia.com/en-ph/articles/40-ulam-ideas-for-lunch-that-are-ready-in-60-minutes-or-less/" target="_blank"  title="View other recipe on Recipedia">View other Recipe</a>
+    
+</div> 
+
+</div>
+
+<div id="dinner" class="recipe-section">
+    <h2>Dinner</h2>
+<div class="recipe-box">
+    <img src="images/kalabasa.jpg" alt="Dinner">
+    <p>"Ginataang Kalabasa, Sitaw, and Hipon is a creamy and flavorful dish with tender squash, fresh string beans, and succulent shrimp, all cooked in rich coconut milk."</p>
+    <a href="https://panlasangpinoy.com/ginataang-hipon-sitaw-at-kalabasa/" target="_blank"  title="View this recipe on Panlasang Pinoy">View Recipe</a>
+</div>
+
+<div class="recipe-box">
+    <img src="images/tilapia.jpg" alt="Dinner">
+    <p>"Sweet and Sour Tilapia features crispy fish fillets coated in a deliciously tangy and sweet sauce, making for a perfectly balanced and tasty dish."</p>
+    <a href="https://panlasangpinoy.com/sweet-and-sour-tilapia/" target="_blank"  title="View this recipe on Panlasang Pinoy">View Recipe</a>
+</div>
+
+<div class="recipe-box">
+    <img src="images/sopas.jpg" alt="Dinner">
+    <p>"Creamy Chicken Sopas is a comforting soup made with tender chicken, soft pasta, and vegetables, all blended in a creamy, savory broth."</p>
+    <a href="https://www.kawalingpinoy.com/chicken-sopas/" target="_blank"  title="View this recipe on Kawaling Pinoy">View Recipe</a>
+</div>
+
+<div class="recipe-box">
+    <img src="images/beef.jpg" alt="Dinner">
+    <p>"Corned Beef with Potato combines tender corned beef with hearty potatoes, simmered to perfection for a satisfying and flavorful meal."</p>
+    <a href="https://panlasangpinoy.com/corned-beef-potato-casserole/" target="_blank"  title="View this recipe on Panlasang Pinoy">View Recipe</a>
+</div>
+
+<div class="other-recipe">
+    <a href="https://panlasangpinoy.com/" target="_blank"  title="View other recipe on Panlasang Pinoy">View other Recipe</a>
+    
+</div> 
+
+</div>
+
+<div class="back-home">
+    <a href="index.html">&uarr; Back to Top</a>
+</div>
+</section>
+</div>
+    <footer>
+        <div class="footer-container">
+            <!-- Company Info -->
+            <div class="footer-section company-info">
+                <h3>Company Address</h3>
+                <p>123 Pinoy Street, Makati City, Philippines</p>
+                <p>Contact: +63 123 456 7890</p>
+                <p>Email: info@Pinoyrecipe.com</p>
+            </div>
+    
+            <!-- Social Media Links -->
+            <div class="social-icons">
+                <h3>Follow Us</h3>
+                <div class="icons">
+                    <a href="#"aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+    
+            <!-- Rights and Copyright -->
+            <div class="footer-section rights">
+                <p>&copy; 2025 Filipino Recipe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
