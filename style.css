@@ -114,7 +114,7 @@ header {
     }
 
     .menu ul li a {
-        font-size: 1.1rem; /* Adjust font size for mobile */
+        font-size: 0.5rem; /* Adjust font size for mobile */
     }
 
 }
@@ -179,17 +179,20 @@ header {
         flex-direction: column; /* Stack text and image vertically */
         padding-left: 0; /* Remove left padding on mobile */
         align-items: center; /* Center align text and image */
+        text-align: center;
+        margin: 0;
     }
 
     .content h1 {
-        font-size: 0.5 rem; /* Adjust font size for smaller screens */
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
         text-align: center; /* Center text on small screens */
         margin-bottom: 15px;
     }
 
     .content p {
-        font-size: 0.5rem; /* Adjust font size for mobile */
+        font-size: 1rem; /* Adjust font size for mobile */
         text-align: center; /* Center text on small screens */
+        margin-bottom: 15px;
     }
 
     .content .text {
@@ -210,7 +213,7 @@ header {
     }
 
     .Discover-text h2 {
-        font-size: 0.5rem; /* Adjust heading size on mobile */
+        font-size: 1.2rem; /* Adjust heading size on mobile */
     }
 }
 
